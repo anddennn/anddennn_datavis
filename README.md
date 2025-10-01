@@ -8,6 +8,7 @@ Instructions & Notes:
 - The website looks its best on desktop but should be responsive on mobile as well. 
 - A custom cursor will appear only on desktop, so it hides your real cursor and acts in its place.
 - The main Javascript interactivity is the 'Bouncing Star' SVG. Clicking on it will change the color.
+- used an otf font so it might not show up on some browsers..
 
 
 
