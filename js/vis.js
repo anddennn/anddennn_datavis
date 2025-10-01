@@ -3,19 +3,19 @@ const starBox = document.querySelector(".star-box");
 const star = document.querySelector(".star");
 const FPS = 60;
 
-// Set starBox to relative so star can be absolutely positioned inside
+// Styling suggestion because CSS wasn't working...
 starBox.style.position = "relative";
 star.style.position = "absolute";
 star.style.width = "100px";
 star.style.height = "100px";
 
-// Initial position and speed
 let xPosition = 10;
 let yPosition = 10;
 let xSpeed = 4;
 let ySpeed = 4;
 
-// Get box and star dimensions
+
+// Dimension function so I don't forget
 function getDims() {
     return {
         boxWidth: starBox.clientWidth,
@@ -25,12 +25,11 @@ function getDims() {
     };
 }
 
-// Update star position using transform
 function update() {
     star.style.transform = `translate(${xPosition}px, ${yPosition}px)`;
 }
 
-// Bounce logic
+// Make it bounce hehe
 setInterval(() => {
     const { boxWidth, boxHeight, starWidth, starHeight } = getDims();
 
@@ -56,7 +55,6 @@ function changeStarColor() {
     }
 }
 
-// Random color generator
 function randomColor() {
     return "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, "0");
 }
