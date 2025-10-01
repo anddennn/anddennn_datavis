@@ -2,37 +2,37 @@
 @font-face {
     font-family: 'PPNikkeiMaru-Light';
     font-style: normal;
-    src: url(../fonts/PPNikkeiMaru-Light.otf) format('opentype');
+    src: url(fonts/PPNikkeiMaru-Light.otf) format('opentype');
 }
 
 @font-face {
     font-family: 'PPNikkeiMaru-LightItalic';
     font-style: italic;
-    src: url(../fonts/PPNikkeiMaru-LightItalic.otf) format('opentype');
+    src: url(fonts/PPNikkeiMaru-LightItalic.otf) format('opentype');
 }
 
 @font-face {
     font-family: 'PPNikkeiMaru-Regular';
     font-style: normal;
-    src: url(../fonts/PPNikkeiMaru-Regular.otf) format('opentype');
+    src: url(fonts/PPNikkeiMaru-Regular.otf) format('opentype');
 }
 
 @font-face {
     font-family: 'PPNikkeiMaru-RegularItalic';
     font-style: italic;
-    src: url(../fonts/PPNikkeiMaru-RegularItalic.otf) format('opentype');
+    src: url(fonts/PPNikkeiMaru-RegularItalic.otf) format('opentype');
 }
 
 @font-face {
     font-family: 'PPNikkeiMaru-UltraBold';
     font-style: normal;
-    src: url(../fonts/PPNikkeiMaru-UltraBold.otf) format('opentype');
+    src: url(fonts/PPNikkeiMaru-UltraBold.otf) format('opentype');
 }
 
 @font-face {
     font-family: 'PPNikkeiMaru-UltraBoldItalic';
     font-style: italic;
-    src: url(../fonts/PPNikkeiMaru-UltraBoldItalic.otf) format('opentype');
+    src: url(fonts/PPNikkeiMaru-UltraBoldItalic.otf) format('opentype');
 }
 
 /**************************************************************************************/
