@@ -1,0 +1,464 @@
+/* FONT IMPORTS */
+@font-face {
+    font-family: 'PPNikkeiMaru-Light';
+    font-style: normal;
+    src: url(../fonts/PPNikkeiMaru-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'PPNikkeiMaru-LightItalic';
+    font-style: italic;
+    src: url(../fonts/PPNikkeiMaru-LightItalic.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'PPNikkeiMaru-Regular';
+    font-style: normal;
+    src: url(../fonts/PPNikkeiMaru-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'PPNikkeiMaru-RegularItalic';
+    font-style: italic;
+    src: url(../fonts/PPNikkeiMaru-RegularItalic.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'PPNikkeiMaru-UltraBold';
+    font-style: normal;
+    src: url(../fonts/PPNikkeiMaru-UltraBold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'PPNikkeiMaru-UltraBoldItalic';
+    font-style: italic;
+    src: url(../fonts/PPNikkeiMaru-UltraBoldItalic.otf) format('opentype');
+}
+
+/**************************************************************************************/
+
+:root{
+    --white: #FFFDF8;
+    --black: #0B1019;
+}
+
+*{
+    font-family: 'PPNikkeiMaru-Regular', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+
+body{
+    min-height: 100vh;
+    padding: 1rem;
+    padding-top: 0;
+    background-color: var(--white);
+}
+
+p, ol, ul, li, a{
+    font-family: 'PPNikkeiMaru-Regular', sans-serif;
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--black);
+    opacity: 1;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0rem;
+    transition: all 300ms ease;
+}
+
+a:hover, a:focus, a:active{
+    border-radius: 1rem;
+    opacity: 0.9;
+}
+
+strong{
+    font-family: 'PPNikkeiMaru-UltraBold', sans-serif;
+}
+
+h1{
+    font-family: 'PPNikkeiMaru-Regular', sans-serif;
+    font-size: 3.5rem;
+    line-height: 0.9;
+    margin-top: 2rem;
+}
+
+h2{
+    font-family: 'PPNikkeiMaru-Regular', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+h3{
+    font-family:'PPNikkeiMaru-Regular', sans-serif;
+    font-size: 2rem;
+}
+
+h4{
+    font-family:'PPNikkeiMaru-Regular', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem 2rem;
+
+}
+
+nav a{
+    width:fit-content;
+    color: var(--black);
+    background: none;
+    text-decoration:none;
+    border-bottom: solid 2px transparent;
+    padding: 0.4rem;
+    margin: 0 2rem 0 0;
+}
+
+nav a:hover, nav a:focus, nav a:active{
+    border-bottom: solid 2px var(--black);
+    border-radius: 0;
+}
+
+
+section {
+    margin-bottom: 3rem;
+    padding: 2rem 1rem;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 5rem;
+    gap: 2rem;
+}
+
+.intro-text a {
+    margin: 7rem 0 0 0;
+    font-size: 1.5rem;
+}
+
+
+.intro-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-pic img {
+    object-fit:cover;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 30rem;
+}
+
+.education-pic{
+    margin-top: 2rem;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1.5rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.education-pic img {
+    width:100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.education-text {
+    padding: 1.5rem;
+}
+
+
+#skills ul, #experience ul {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    list-style: disc inside;
+}
+
+#contact .flex {
+    flex-direction: row;
+    margin-top: 4rem;
+    gap: 1rem;
+}
+
+#contact a {
+    margin: 0;
+}
+
+.back-top {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto;
+    color: var(--black);
+    background-color: var(--white);
+    border-bottom: solid 2px var(--black);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.back-top:hover, .back-top:focus, .back-top:active{
+    border-radius: 0;
+    padding: 0.9rem;
+}
+
+/************************* GRAPHS **************************/
+.graph .labels.x-labels {
+    text-anchor: middle;
+}
+
+.graph .labels.y-labels {
+    text-anchor: end;
+}
+
+
+.graph {
+    display: block;
+    margin: 2rem auto;
+    width: 100%;
+    max-width: fit-content;
+    height: auto;
+    background: none;
+    border-radius: 1rem;
+}
+
+.graph .grid {
+    stroke: var(--black);
+    stroke-dasharray: 0;
+    stroke-width: 1;
+}
+
+.labels {
+    font-size: 1rem;
+}
+
+.label-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    fill: var(--black);
+}
+
+.data-dot {
+    fill: blue;
+    stroke-width: 1; 
+}
+
+.data-line{
+    fill: none;
+    stroke: blue;
+    stroke-width: 3;
+}
+.star-box{
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    background: var(--black);
+    overflow: hidden;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.star{
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    fill: pink;
+
+}
+
+@media (min-width: 50rem){
+
+    body{
+        padding: 3rem;
+        padding-top: 0;
+        max-width: 90rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p, ol, ul, li, a{
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+
+    h1{
+        font-size: 5rem;
+        line-height: 0.9;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    h2{
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+
+    h4{
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    section {
+        margin-bottom: 3rem;
+        padding: 2rem 2rem;
+    }
+
+    .flex{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #intro .flex{
+        justify-content: space-between;
+    }
+
+    .intro-text {
+        align-items: start;
+        justify-content: start;
+        margin: 0rem;
+        gap: 2rem;
+        max-width: 45rem;
+    }
+
+    .intro-text a {
+        margin-top: 10rem;
+        font-size: 1.5rem;
+        justify-self: end;
+    }
+
+    .intro-pic{
+        align-items: flex-end;
+        max-width: 20rem;
+    }
+
+    .intro-pic img {
+        object-fit:cover;
+        margin-bottom: 1rem;
+        width: 100%;
+        height: 26rem;
+    }
+
+    .education-pic{
+        padding: 4rem;
+        height: fit-content;
+        gap: 2rem;
+        max-width: 40rem;
+    }
+
+    .education-pic img {
+        width:100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .education-text {
+        align-content: end;
+        padding: 1.5rem;
+    }
+
+    .education-text p, .education-text li{
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+
+
+    #skills ul, #experience ul {
+        margin-left: 2rem;
+        margin-top: 2rem;
+        list-style: disc inside;
+    }
+
+    #contact .flex {
+        margin-top: 4rem;
+        gap: 1rem;
+    }
+
+    #contact a {
+        margin: 0;
+    }
+
+    .back-top {
+        display: block;
+        width: fit-content;
+        margin: 2rem auto;
+        color: var(--black);
+        background-color: var(--white);
+        border-bottom: solid 2px var(--black);
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    .back-top:hover, .back-top:focus, .back-top:active{
+        border-radius: 0;
+        padding: 0.9rem;
+    }
+
+    .cursor {
+        width: 1rem;
+        height: 1rem;
+        background-color: red;
+        position: absolute;
+        transition-duration: 50ms;
+        transition-timing-function: ease-out;
+        pointer-events: none;
+        z-index: 9999;;
+    }   
+
+    @keyframes cursorAnim {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .expand {
+    animation: cursorAnim .1s forwards;
+    }   
+}

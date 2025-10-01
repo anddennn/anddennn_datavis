@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Den - Home Page</title>
 </head>
+
+
+<!-- From rubric:
+    Home page (index.html) with:
+    - Personal introduction: Your name, major, and a brief description of your interests.
+    - Education: List your current and previous educational institutions and any relevant courses.
+    - Skills: Highlight technical skills such as programming languages, software tools, etc.
+    - Experience: Include work experience, internships, or relevant projects.
+    - Images: Include images that represent you or your work.
+    - Contact information: Provide a way for people to contact you, such as an email or LinkedIn profile.. -->
 <body>
-    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="visualizations.html">Visualizations</a>
+    </nav>
+    <section id="intro">
+        <div class="flex">
+            <div class="intro-text">
+                <h1>Hello I'm <strong>DEN</strong> and I can make data visualizations.</h1>
+                <h2>I think...</h2>
+                <a href="visualizations.html">I'm not lying</a>
+            </div>
+            <div class="intro-pic">
+                <img src="../imgs/home-pic.jpg" alt="Picture of Den showing off her sharp jawline" width="150">
+                <p>
+                    A current third year student at SFU's School of Interactive Arts and Technology, 
+                    Den is a passionate world-class talented designer (self proclaimed) with a
+                    proficiency in UI/UX design, web developments and now, DATA VISUALIZATIONS!!
+                    On the very rare occasions of free time, she is either finding another way to do work, 
+                    or she's gambling in video games.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <h3>I went to school so you can trust me.</h3>
+        <div class="flex">
+            <div class="education-pic">
+                <img src="../imgs/SFU.jpg" alt="SFU surrey mezzanine with Den holding a fish in the middle">
+                <p>Simon Fraser University (SFU) - BSc in Interactive Arts and Technology (Expected Graduation: 2027)</p>
+            </div>
+            <div class="education-text">
+                <p>Relevant courses:</p>
+                <ul>
+                    <li>IAT 355 - Introduction to Visual Analytics</li>
+                    <li>IAT 339 - Web Design and Development</li>
+                    <li>IAT 238 - Foundations for Designing Interactions</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <h3>How else would I be doing the job?</h3>
+        <ul>
+            <li>Programming Languages: HTML, CSS, JavaScript, Python</li>
+            <li>Software Tools: Adobe Creative Suite (Photoshop, Illustrator After Effects), Figma, Tableau</li>
+        </ul>
+    </section>
+    <section id="experience">
+        <h2>Experience</h2>
+        <h3>What have I done?</h3>
+        <ul>
+            <li>Studio B Design Agency (2025) - Visual Designer</li>
+            <li>Enactus SFU (2025) - UI/UX Designer</li>
+            <li>Second Savour (2024) - Visual Designer/Illustrator</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Like what you see?</h2>
+        <h3>Go ahead and contact me!</h3>
+        <div class="flex">
+            <a href="mailto:dmk12@sfu.ca">Send me an Email</a>
+            <a href="https://www.linkedin.com/in/den-kinanti-9b5741284/">DM me on LinkedIn</a>
+        </div>
+    </section>
+    <a class="back-top" href="#intro">Back to the top you go!</a>
+    <div class="cursor"></div>
+    <script src="../js/main.js"></script>
 </body>
 </html>

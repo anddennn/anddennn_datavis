@@ -3,9 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Den - Visualizations</title>
 </head>
+
+<!-- Visualization page:
+    - One SVG version of the visualization you have chosen. 
+        You choose what to visualize; you'll get an extra score if you are creative 
+        (you may use the sketch diagram we asked for in the first session it's up to you).
+    - Some creative SVG art using JS.
+        ANYTHING as long as it's run and cool it goes
+        But it needs to have some interaction-->
+
 <body>
-    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="visualizations.html">Visualizations</a>
+    </nav>
+    <section id="vis-intro">
+        <h1>Data Visualization Work</h1>
+        <h2>Welcome to my playground of bruteforcing visualizations onto CSS and Javascript code.</h2>
+    </section>
+    <section id="vis-projects">
+        <div>
+            <h3>Assignment flow line chart  </h3>
+            <p>A graph of roughly how I allocated my time for assignments.</p>
+            <!-- Insert SVG line chart here -->
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                class="graph" aria-labelledby="title" role="img"
+                viewBox="0 0 800 550" preserveAspectRatio="xMidYMid meet">
+                <title id="title">Exponential Line Chart: Hours Worked Over 10 Days</title>
+                    <!-- Y axis line -->
+                    <g class="grid x-grid" id="xGrid">
+                        <line x1="140" x2="140" y1="30" y2="470"></line>
+                    </g>
+                    <!-- X axis lie -->
+                    <g class="grid y-grid" id="yGrid">
+                        <line x1="140" x2="760" y1="470" y2="470"></line>
+                    </g>
+
+                    <!-- Days -->
+                    <g class="labels x-labels">
+                        <text x="150" y="510">Day 1</text>
+                        <text x="220" y="510">Day 2</text>
+                        <text x="290" y="510">Day 3</text>
+                        <text x="360" y="510">Day 4</text>
+                        <text x="430" y="510">Day 5</text>
+                        <text x="500" y="510">Day 6</text>
+                        <text x="570" y="510">Day 7</text>
+                        <text x="640" y="510">Day 8</text>
+                        <text x="710" y="510">Day 9</text>
+                        <text x="770" y="510">Due date</text>
+                        <text x="450" y="540" class="label-title">Days since assignment posted</text>
+                    </g>
+                    <!-- Hours -->
+                    <g class="labels y-labels">
+                        <text x="120" y="470">0</text>
+                        <text x="120" y="370">4</text>
+                        <text x="120" y="270">8</text>
+                        <text x="120" y="170">12</text>
+                        <text x="120" y="70">16</text>
+                        <text x="70" y="250" class="label-title">Hours</text>
+                    </g>
+
+                    <polyline
+                        class="data-line"
+                        points="150,470 220,465 290,460 360,460 430,455 500,455 570,455 640,455 710,350 770,100"
+                    />
+            
+                    <g class="data-dot" data-setname="Exponential Data">
+                        <circle cx="150" cy="470" r="6"></circle>
+                        <circle cx="220" cy="465" r="6"></circle>
+                        <circle cx="290" cy="460" r="6"></circle>
+                        <circle cx="360" cy="460" r="6"></circle>
+                        <circle cx="430" cy="455" r="6"></circle>
+                        <circle cx="500" cy="455" r="6"></circle>
+                        <circle cx="570" cy="455" r="6"></circle>
+                        <circle cx="640" cy="455" r="6"></circle>
+                        <circle cx="710" cy="350" r="6"></circle>
+                        <circle cx="770" cy="100" r="6"></circle>
+                    </g>
+            </svg>
+        </div>
+        <div>
+        <h3>Bouncing Star Interactive JS</h3>
+            <p>Click on the box, it makes the star change colour!</p>
+            <div class="star-box">
+                <svg class="star" viewBox="0 0 200 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="100,10 40,198 190,78 10,78 160,198" />
+                </svg>
+            </div>
+        </div>
+    </section>
+    <div class="cursor"></div>
+    <script src="../js/vis.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
