@@ -66,3 +66,4 @@ window.addEventListener("resize", () => {
     section.style.height = window.innerHeight + "px";
     section.style.width = window.innerWidth + "px";
 });
+
